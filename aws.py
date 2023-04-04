@@ -216,9 +216,7 @@ if __name__ == '__main__':
         formatted_data.append(f"{data[i]}|{data[i+1]}")
 
     print(f'{date_show()} Automation Task AWS')
-    get_data = open(f"{cwd}\\data.txt","r")
-    get_data = get_data.read()
-    get_data = get_data.split("\n")
+ 
     for i in formatted_data:
         email = i.split("|")[0]
         password = i.split("|")[1]
